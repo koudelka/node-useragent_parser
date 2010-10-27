@@ -1,0 +1,25 @@
+{
+  "name" : "useragent_parser",
+  "description" : "Browser useragent parser.",
+  "version" : "0.1.0",
+  "keywords" : [ "node", "useragent", "browser", "parser"],
+  "homepage" : "http://github.com/koudelka/node-useragent_parser",
+  "author" : "Michael Shapiro <koudelka@ryoukai.org>",
+  "contributors" : [],
+  "bugs" : {
+    "mail" : "koudelka@ryoukai.org",
+    "web"  : "http://github.com/koudelka/node-useragent_parser/issues"
+  },
+  "licenses" : [ {
+    "type" : "Apache 2.0",
+    "url"  : "http://www.apache.org/licenses/LICENSE-2.0",
+  } ],
+
+  "repository" : {
+    "type" : "git",
+    "url"  : "git://github.com/koudelka/node-useragent_parser.git"
+  },
+  "engines" : { "node" : ">=0.2.3" },
+  "dependencies" : {},
+  "directories" : { "lib" : "./lib", test : "./test"}
+}
