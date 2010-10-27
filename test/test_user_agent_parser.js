@@ -2,7 +2,7 @@
 
 var 
   assert = require('assert'),
-  parser = require('./../useragent_parser').parse
+  parser = require('./../lib/useragent_parser').parse
 
 var test_strings = {
   'Opera/10.00 (Windows NT 5.1; U; en) Presto/2.2.0':

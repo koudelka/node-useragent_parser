@@ -1,7 +1,7 @@
 var
   csv = require('ya-csv'),
   assert = require('assert'),
-  parse = require('./../useragent_parser').parse
+  parse = require('./../lib/useragent_parser').parse
 
 var reader = csv.createCsvFileReader(__dirname + '/sample_user_agents.csv')
 
