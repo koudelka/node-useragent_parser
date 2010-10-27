@@ -1,7 +1,7 @@
 {
   "name" : "useragent_parser",
   "description" : "Browser useragent parser.",
-  "version" : "1.0",
+  "version" : "1.0.0",
   "keywords" : [ "node", "useragent", "browser", "parser"],
   "homepage" : "http://github.com/koudelka/node-useragent_parser",
   "author" : "Michael Shapiro <koudelka@ryoukai.org>",
