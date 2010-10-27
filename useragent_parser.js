@@ -107,11 +107,10 @@ var replace = function(type, replacement) {
   return function(components) {
     component_matches = replacement.match(/\$([a-z]+)/g)
     if (component_matches)
-      for (var i=0 ; i < component_matches.length ; i++) {
-        var match = component_matches[i]
+      component_matches.forEach(function(match) {
         var component = match.substring(1)
         components[type] = replacement.replace(match, components[component])
-      }
+      })
     else
       components[type] = replacement
   }
@@ -140,8 +139,9 @@ exports.parse = function(useragent) {
         v2: match[3],
         v3: match[4]
       }
-      for (var i=0 ; i < callbacks.length ; i++)
-        callbacks[i](components)
+      callbacks.forEach(function(cb) {
+        cb(components)
+      })
 
       return components
     }
