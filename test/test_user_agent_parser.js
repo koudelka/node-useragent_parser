@@ -2,7 +2,7 @@
 
 var 
   assert = require('assert'),
-  parser = require('./../lib/useragent_parser').parse
+  parser = require('../lib').parse
 
 var test_strings = {
   'Opera/10.00 (Windows NT 5.1; U; en) Presto/2.2.0':
@@ -34,6 +34,9 @@ var test_strings = {
 
   'Mozilla/5.0 (webOS/1.2; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Desktop/1.0,gzip(gfe),gzip(gfe)':
   ['Palm webOS', '1', '2', null],
+
+  'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-US) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0':
+  ['Palm webOS', '3', '0', '5'],
 
   'Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B367 Safari/531.21.10,gzip(gfe),gzip(gfe)':
   ['iPad', '3', '2', null],
